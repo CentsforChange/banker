@@ -23,6 +23,7 @@
     ],
     "require": {
         "guzzlehttp/guzzle" : "~6.0",
-        "asgrim/ofxparser" : "~1.2"
+        "asgrim/ofxparser" : "~1.2",
+        "nesbot/carbon" : "~1.2.2"
     }
 }
