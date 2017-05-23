@@ -14,6 +14,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Exception\RequestException;
+use OfxParser\Ofx;
 
 
 class Banker{
@@ -127,7 +128,10 @@ class Banker{
             return [];
         }
         $responseBody = (string) $response->getBody();
-        
+        $ofxParser = new \OfxParser\Parser();
+        $ofx = $ofxParser->loadFromString($responseBody);
+        //Returns an array of BankAccount objects
+        return $ofx->bankAccounts();
     }
 
     private function getHeaders(){
