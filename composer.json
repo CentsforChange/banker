@@ -1,13 +1,17 @@
 {
     "name": "centsforchange/banker",
-    "description": "Heavily inspired by banking.js and python's OFXClient-- making OFX processing easy for PHP",
+    "description": "Makes requesting and processing OFX easy",
+    "keyworks": ["bank", "banking", "ofx"],
     "type": "library",
-    "license": "Apache 2.0",
+    "homepage": "https://github.com/centsforchange/banker",
+    "license": "Apache-2.0",
     "version": "dev-master",
     "authors": [
         {
             "name": "Erik Partridge",
-            "email": "erik@centsforchange.net"
+            "email": "erik@centsforchange.net",
+            "homepage": "https://centsforchange.net",
+            "role": "Developer"
         }
     ],
     "autoload": {
