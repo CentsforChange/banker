@@ -1,0 +1,25 @@
+{
+    "name": "centsforchange/banker",
+    "description": "Heavily inspired by banking.js-- making OFX processing easy for PHP",
+    "type": "library",
+    "license": "Apache 2.0",
+    "version": "dev-master",
+    "authors": [
+        {
+            "name": "Erik Partridge",
+            "email": "erik@centsforchange.net"
+        }
+    ],
+    "autoload": {
+        "psr-0" : {
+            "Weaverryan\\DangerZone" : "src"
+        }
+    },
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/CentsforChange/banker"
+    }
+    ],
+    "require": {}
+}
