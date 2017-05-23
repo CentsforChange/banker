@@ -1,7 +1,7 @@
 {
     "name": "centsforchange/banker",
     "description": "Makes requesting and processing OFX easy",
-    "keyworks": ["bank", "banking", "ofx"],
+    "keywords": ["bank", "banking", "ofx"],
     "type": "library",
     "homepage": "https://github.com/centsforchange/banker",
     "license": "Apache-2.0",
