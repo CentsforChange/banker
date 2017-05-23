@@ -1,4 +1,5 @@
 vendor/
+src/CentsforChange/banker/vendor/
 node_modules/
 npm-debug.log
 

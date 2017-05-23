@@ -21,5 +21,7 @@
         "url": "https://github.com/CentsforChange/banker"
     }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle" : "~6.0"
+    }
 }
