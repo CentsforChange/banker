@@ -5,6 +5,7 @@ It supports retrieval of bank account information as well as statement retrieval
 
 Used internally at [Cents for Change](https://centsforchange.net/).
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f3825865ab02497496e9dbf52854dfa4)](https://www.codacy.com/app/erikdevelopments/banker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CentsforChange/banker&amp;utm_campaign=Badge_Grade)
 ## Installation
 Using [Composer](https://getcomposer.org/):
 
