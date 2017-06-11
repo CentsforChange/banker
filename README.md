@@ -1,4 +1,7 @@
 # Banker
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f3825865ab02497496e9dbf52854dfa4)](https://www.codacy.com/app/erikdevelopments/banker?utm_source=github.com&utm_medium=referral&utm_content=CentsforChange/banker&utm_campaign=badger)
+
 Banker is a PHP library designed to make OFX requests for bank account information, and then returned that information in the form of PHP objects. 
 
 It supports retrieval of bank account information as well as statement retrieval. Supports all account types except investment, may encounter issues with Discover Card.
