@@ -75,7 +75,7 @@ class Banker{
     * @return string the OFX with user credentials rendered
     **/
     private function signOnMessage(){
-        if($ofxVersion != 103){
+        if($this->ofxVersion != 103){
             $baseXML = "<SIGNONMSGSRQV1>
                 <SONRQ>
                     <DTCLIENT>%s</DTCLIENT>
