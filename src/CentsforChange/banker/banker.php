@@ -213,7 +213,7 @@ class Banker{
             </CCSTMTRQ>
         ";
         $res = sprintf($baseXML, $number, $since);
-        return $this->generateMessage("CREDITCARD", "CCSTMT", $baseXML);
+        return $this->generateMessage("CREDITCARD", "CCSTMT", $res);
     }
 
     private function getCreditCardStatement($number, $days){
