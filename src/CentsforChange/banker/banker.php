@@ -219,7 +219,7 @@ class Banker{
     private function getCreditCardStatement($number, $days){
         $request = $this->creditCardStatementRequest($number, $days);
         $response = $this->makeRequest($request);
-        $response = (string) $response->getBody();
+        $responseBody = (string) $response->getBody();
         $ofxParser = new \OfxParser\Parser();
         $ofx = $ofxParser->loadFromString($responseBody);
         return $ofx->bankAccounts[0]->statement;
