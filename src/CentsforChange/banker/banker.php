@@ -230,14 +230,14 @@ class Banker
             </CCSTMTRQ>
         ";
         $res = sprintf($baseXML, $number, $since);
-        return $this->generateMessage("CREDITCARD", "CCSTMT", $baseXML);
+        return $this->generateMessage("CREDITCARD", "CCSTMT", $res);
     }
 
     private function getCreditCardStatement($number, $days)
     {
         $request = $this->creditCardStatementRequest($number, $days);
         $response = $this->makeRequest($request);
-        $response = (string) $response->getBody();
+        $responseBody = (string) $response->getBody();
         $ofxParser = new \OfxParser\Parser();
         $ofx = $ofxParser->loadFromString($responseBody);
         return $ofx->bankAccounts[0]->statement;
