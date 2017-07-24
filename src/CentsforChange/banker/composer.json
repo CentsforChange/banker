@@ -1,6 +1,0 @@
-{
-    "require": {
-        "guzzlehttp/guzzle": "~6.0",
-        "asgrim/ofxparser": "^1.2"
-    }
-}
