@@ -153,7 +153,7 @@ class Banker
      */
     private function makeRequest($query)
     {
-        $client = new GuzzleHttp\Client();
+        $client = new \GuzzleHttp\Client();
         $request = new Request('POST', $this->url);
         $body = $this->getHeaders() . "<OFX>" . $this->signOnMessage() . $query . "</OFX>";
         $response = $client->send(
