@@ -14,6 +14,17 @@ Using [Composer](https://getcomposer.org/):
 $ composer require centsforchange/banker
 ```
 
+Banker requires that your PHP SSL Version be OpenSSL for some banks.
+
+```bash
+php -i | grep "SSL Version"
+```
+
+## Support
+| Financial Inst. | Market Share  | Support |
+| --------------- |:-------------:| :------:|
+| Bank of America | 11%           |    Yes  |
+
 ## Usage
 ```php
 $fid = "5959"; //Example for Bank of America-- all can be found at www.ofxhome.com
@@ -24,12 +35,12 @@ $user = "example"; //The log in username for the user who's data you are trying 
 $password = "password"; //Their password plain text-- please don't store this-- this library doesn't and you shouldn't either. 
 
 $clientId = ""; //Optional. Only required if using OFX version 103-- $clientId defaults to empty string
-$appVersion = "2900"; //Optional. The default app version is 2500, don't change this unless you have a reason-- but there are reasons for doing so.
+$appVersion = "2900"; //Optional. The default app version is 2700, don't change this unless you have a reason-- but there are reasons for doing so.
 $ofxVersion = "102"; //Optional. This library only supports 102 and 103, defaults to 102
 $app = "QWIN"; //Optional. Only change this if you have a reason-- not tested for anything other than QWIN
 
 //Constructor
-$banker = new \CentsforChange\Banker($fid, $org, $url, $user, $password, $clientId, $appVersion, $ofxVersion, $app);
+$banker = new \CentsforChange\Banker\Banker($fid, $org, $url, $user, $password, $clientId, $appVersion, $ofxVersion, $app);
 
 //Returns an array of accounts
 $account = $banker->getAccounts()[0];
