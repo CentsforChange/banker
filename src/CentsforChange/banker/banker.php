@@ -46,7 +46,7 @@ class Banker
         return (string) $this->cookie;
     }
     
-    public function __constructor($fid, $org, $url, $user, $password, $clientId = "", $appVersion = "2700", $ofxVersion = "102", $app = "QWIN")
+    public function __construct($fid, $org, $url, $user, $password, $clientId = "", $appVersion = "2700", $ofxVersion = "102", $app = "QWIN")
     {
         $this->fid = $fid;
         $this->org = $org;
@@ -159,11 +159,11 @@ class Banker
         $response = $client->send(
             $request, [
             'body' => $body,
-            'headers' => [
-                "User-Agent" => "banker-php",
-                "Accept" => 'application/x-ofx',
-                "Content-Type" => 'application/x-ofx'
-            ]
+                'headers' => [
+                    "User-Agent" => "banker-php",
+                    "Accept" => 'application/x-ofx',
+                    "Content-Type" => 'application/x-ofx'
+                ]
             ]
         );
         return $response;
