@@ -46,7 +46,7 @@ class Banker
         return (string) $this->cookie;
     }
     
-    public function __constructor($fid, $org, $url, $user, $password, $clientId = "", $appVersion = "2500", $ofxVersion = "102", $app = "QWIN")
+    public function __constructor($fid, $org, $url, $user, $password, $clientId = "", $appVersion = "2700", $ofxVersion = "102", $app = "QWIN")
     {
         $this->fid = $fid;
         $this->org = $org;
