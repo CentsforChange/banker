@@ -118,7 +118,7 @@ class Banker
     private function accountsRequest()
     {
         //And yay, a magic number
-        return generateMessage(
+        return $this->generateMessage(
             "SIGNUP", "ACCTINFO", "<ACCTINFORQ>
                                 <DTACCTUP>19700101000000</DTACCTUP>
                             </ACCTINFORQ>"
